@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+
+<script src="https://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
+<script src="https://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+<!--  for css-->
+<style>
+.box{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.boxtweet{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+h1,h2,h3,h4{
+  text-align: center;
+}
+
+#formItem label{
+    display: block;
+    text-align: center;
+  }
+
+#session,#sessionR,.priceDemoG{
+width:400px;
+height:400px;
+margin: 0 auto;
+/*margin:30px 200px;*/
+text-align: center;
+}
+
+/*#pricelist{
+  display: block;
+  text-align: center;
+}*/
+</style>
+
+<!--for script-->
+<script>
+$(document).ready(function(){
+$('#session').hide();
+$('#sessionR').hide();
+$('.priceDemoG').hide();
+$('.priceDemoB').hide();
+$('.priceList').hide();
+$('.box').on('click',function(){
+$('#session').show();
+});
+$('button').on('click', function(){
+$('#session').hide();
+$('#sessionR').show();
+});
+//$('.submitContR').on('click',function(){
+//$('#sessionR').hide();
+//$('#session').show();
+//});
+//$('#id_emailR').on('mouseenter',function(){
+//$('#demo').hide();
+//});
+});
+</script>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>iPort Auctions</title>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="css/bootstrap.css">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+<body>
+<nav>
+  <div class="container">
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="index.html">iPort</a> </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+<!--<li class="active"><a href="#"> <span class="sr-only">(current)</span></a> </li>-->
+        <!--<li><a href="#">Sign in/Log in</a> </li>-->
+        <!--<li><a href="#">Help & Contact</a> </li>-->
+        <!--<li><a href="accounttest.html">My Account</a> </li>-->
+
+      </ul>
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default"><span class="fa fa-search"></span> Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right hidden-sm">
+
+        <!--<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">My Account <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Your Orders</a> </li>
+            <li><a href="#">Your Watchlist</a> </li>
+            <li><a href="#">Your Details</a> </li>
+            <li><a href="#">Payment Options</a> </li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Sign Out</a> </li>
+          </ul>
+        </li>
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">My Cart <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a> </li>
+            <li><a href="#">Another action</a> </li>
+            <li><a href="#">Something else here</a> </li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a> </li>
+          </ul>
+        </li>-->
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+<p>
+</p>
+<br>
+<h1>Wired Xbox 360 Controller</h1>
+<div class="boxtweet">
+<a class="twitter-share-button"
+    <a href="https://twitter.com/share?count=none&hashtags=iPort" class="twitter-share-button" data-lang="en">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<div class="container">
+  <img src="images/controller.JPG" alt="Thumbnail Image 1" class="img-responsive" align="middle">
+  <br>
+  <div class="box"><a class="btn btn-primary btn-lg" role="button"> Bid!</a></div>
+</div>
+<!--hide the form-->
+<div id="session">
+  <br>
+    <p align="center"> Please log in first. If you don't have an account, please sign up.</p>
+    <h2>Log in</h2>
+
+    <form class="commonForm" id="session-form" method="post" accept-charset="utf-8" name="commonForm">
+      <fieldset>
+
+        <p align="center"><label for="id_email">Username(email):</label> <input id="id_email" type="text"  name="email" maxlength="100" /></p>
+
+<p align="center"><label for="id_password">Password:</label> <input type="password"  name="password" id="id_password" /></p>
+        <div class="submitCont">
+          <input type="submit" value="Log in" />
+        </div>
+      </fieldset>
+
+
+
+      <button type="button">Sign up</button>
+    </form> <!-- /commonForm -->
+  </div> <!-- /session -->
+  <!--  hide give price good-->
+  <div class="priceDemoG">
+  <form class="priceForm" method="post" accept-charset="utf-8" name="priceForm">
+  <fieldset>
+  <p align="center"><label for="id_price"> What are you bidding?:</label><input id="id_price" type="text" name="price" maxlength="100" align="center"/></p>
+   <div class="submitPrice">
+   <input type="submit"  value="price" />
+   </div>
+   </fieldset>
+  </form>
+  </div>
+  <!-- hide bad price-->
+  <div class="priceDemoB">
+<p align="center"> Your email or password is incorrect.</p>
+</div>
+
+<!--hide make a auction list-->
+<div class="priceList">
+<ol>
+<li id="priceList"> Account <span>///Price///Date</span></li>
+</ol>
+</div>
+<script>
+var accountPrice;
+var theHigesterPrice=0;
+$('.priceForm').on('submit',function(e){
+  e.preventDefault();
+  //theHigesterPrice=0;
+  var date=new Date();
+  accountPrice=document.forms["priceForm"]["price"].value;
+
+  $('#priceList').after('<li>'+accountEmail+'///'+'<span>'+accountPrice+'</span>'+'///'+date+'</li>');
+  if(Number(accountPrice)>Number(theHigesterPrice)){
+  theHigesterPrice=accountPrice;
+   $('ol').next().remove();
+  $('ol').after('<p style="color:red">'+'The highest bid now is '+accountEmail+'///'+accountPrice+'</p>');
+  }
+  else{
+  $('ol').before('<p>'+'</p>');
+  }
+  $('.priceDemoG').hide();
+  $('.priceDemoB').hide();
+  $('.priceList').show();
+
+});
+</script>
+  <!-- validate account-->
+  <script>
+  var accountEmail;
+
+  var accountPassword;
+  $('#session-form').on('submit',function(e){
+
+  e.preventDefault();
+   accountEmail=document.forms["commonForm"]["email"].value;
+   accountPassword=document.forms["commonForm"]["password"].value;
+   $('.priceDemoB').hide();
+  $('.priceDemoG').hide();
+  for(var h=0;h<i;h++){
+   $('.priceDemoB').hide();
+  if((accountEmail==account[h].email)&&(accountPassword==account[h].password)){
+
+     $('.priceDemoG').show();
+	 $('#session').hide();
+  }
+  else{
+  $('.priceDemoB').show();
+  $('#session').hide();
+  }
+  }
+
+  });
+
+
+
+  </script>
+
+
+  <!--hide the signup form-->
+  <div id="sessionR">
+
+    <h2>Create an account</h2>
+
+    <form class="commonFormR" id="session-formR" method="post" accept-charset="utf-8" name="commonFormR">
+      <fieldset>
+
+
+<p><label for="id_emailR">Username(email):</label> <input id="id_emailR" type="text"  name="emailR" onblur="validateForm()" maxlength="100" /></p>
+<p id="demo" style="color:red">  </p>
+<script>
+// validate email
+function validateForm(){
+	var x=document.forms["commonFormR"]["emailR"].value;
+	var atpos=x.indexOf("@");
+	var dotpos=x.lastIndexOf(".");
+	if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length){
+		document.getElementById('demo').textContent='this is not right email.pleas do again.';
+  		return false;
+	}
+	else{
+	document.getElementById('demo').textContent='';
+	return true;
+	}
+
+}
+</script>
+<p><label for="id_password1">Password1:</label> <input type="password"  name="password1" id="id_password1" /></p>
+<p><label for="id_password2">Password2(confirm):</label> <input type="password"  name="password2" onblur="samePassword()" id="id_password2" /></p>
+<p id="demop" style="color:red"></p>
+<script>
+function samePassword(){
+var firstPassword=document.forms["commonFormR"]["password1"].value;
+var secondPassword=document.forms['commonFormR']['password2'].value;
+if(firstPassword!=secondPassword){
+document.getElementById('demop').textContent='please set up the same password';
+return false;
+}
+else{
+document.getElementById('demop').textContent='';
+return true;
+}
+
+}
+
+</script>
+<div class="submitContR">
+          <input type="submit" value="Create an account" />
+        </div>
+      </fieldset>
+	  </form> <!-- /commonForm  -->
+  </div> <!-- /session -->
+  <!--collect data-->
+  <script>
+  var i=0;
+  var account=[];
+
+  $(function(){
+
+  $('#session-formR').on('submit',function(e){
+  e.preventDefault();
+  var email=document.forms["commonFormR"]["emailR"].value;
+  var password=document.forms["commonFormR"]["password2"].value;
+
+
+   account[i]={};
+  account[i].email=email;
+  account[i].password=password;
+  i++;
+  $('#session').show();
+  $('#sessionR').hide();
+
+  });
+  });
+
+
+
+  </script>
+  <section>
+    <div class="row">
+      <div class="col-lg-12 page-header text-center">
+        <h2>REVIEWS</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6 col-lg-6">
+        <blockquote>
+          <p>While I remain a Playstation-loyal gamer, Microsoft certainly knows how to make really nice controllers. These controllers feel great and work great! One bummer (inescapable, I might add) is that these controllers auto-turn-off really REALLY fast. This isn't a problem if you're gaming, but when you stream netflix and want to pause it really fast is a major irritation. like I said though, this problem is not with the controller, but with the software and can't be avoided if you have an xbox 360.</p>
+          <small>LifeofGamer<cite title="Source Title"> - purchased 6/15/16</cite></small> </blockquote>
+      </div>
+
+      <div class="col-6 col-lg-6">
+        <blockquote>
+          <p>After having it for about a month now, I'm happy with my purchase. It's holding up very well and my gaming experience has considerably improved. Great buy if you need a new regular black standard Xbox 360 controller. It came in your regular official Microsoft packaging, so that was a great relief. It arrived on time which was also a plus. Basically, if you need a new one, get this controller.</p>
+          <small>Slactacular<cite title="Source Title"> - purchased 5/11/17<!--</cite></small> </blockquote>-->
+      </div>
+
+    </div>
+
+  </section>
+
+  <div class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-9 col-lg-9">
+            <p class="lead">Not convinced? Want to know more? Don't take our word for it, visit the official website! </p>
+            <br>
+          </div>
+          <div class=" text-center col-sm-6 col-lg-3 col-sm-offset-3 col-md-3 col-xs-offset-4 col-xs-5 col-lg-offset-0">
+          	<a class="btn  btn-block btn-lg btn-success" href="#" title="">Click here!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- /container -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 page-header text-center">
+          <h2>PRODUCT DETAILS</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-lg-4">
+          <h3>Use up to four controllers simultaneously on either one console or personal computer</h3>
+          <p> <i class="icon-desktop "></i>Enjoy either singleplayer or multiplayer games with friends and family.</p>
+          <p><a class="btn btn-default" href="http://www.bootstraptor.com">View details »</a></p>
+        </div>
+        <div class="col-xs-6 col-lg-4">
+          <h3>New left and right shoulder buttons are designed for ease of use</h3>
+          <p> <i class="icon-desktop "></i>Designed to be long lasting as well as comfortable for extended use, expect stress free gaming.</p>
+          <p><a class="btn btn-default" href="http://www.bootstraptor.com">View details »</a></p>
+        </div>
+        <div class="col-xs-6 col-lg-4">
+          <h3>Great new look with a matte black finish and gloss accents</h3>
+          <p> <i class="icon-desktop "></i> Sleek and ergonomic, this controller will last in your hands comfortably and securely. </p>
+          <p><a class="btn btn-default" href="http://www.bootstraptor.com">View details »</a></p>
+        </div>
+        <div class="col-xs-6 col-lg-4">
+          <h3>Integrated headset port for Xbox LIVE play</h3>
+          <p> <i class="icon-desktop "></i>Voice comms are a touch away, access made easy by integrated audio technology. </p>
+          <p><a class="btn btn-default" href="http://www.bootstraptor.com">View details »</a></p>
+        </div>
+
+      </div>
+    </div>
+
+
+
+<hr>
+  <div class="container well">
+    <div class="row">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-7">
+        <div class="row">
+          <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6">
+            <div>
+              <ul class="list-unstyled">
+                <li> <a><strong>Buying & Selling</strong></a> </li>
+                <li> <a href="maintenance.html">Registration</a> </li>
+                <li> <a href="maintenance.html">Bidding & Buying</a> </li>
+                <li> <a href="maintenance.html">iPort Services</a> </li>
+                <li> <a href="advertise.html">Advertise with Us</a> </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-4  col-xs-6">
+            <div>
+              <ul class="list-unstyled">
+                <li> <a><strong>Help & Contact</strong></a> </li>
+                <li> <a href="maintenance.html">Resolution Center</a> </li>
+                <li> <a href="maintenance.html">Returns & Replacements</a> </li>
+                <li> <a href="maintenance.html">Manage Your Content and Devices</a> </li>
+                <li> <a></a> </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6">
+            <div>
+              <ul class="list-unstyled">
+                <li> <a><strong>Get to Know Us</strong></a> </li>
+                <li> <a href="aboutus.html">Company Info</a> </li>
+                <li> <a href="maintenance.html">News</a> </li>
+                <li> <a href="maintenance.html">Investors</a> </li>
+                <li> <a href="maintenance.html">Careers</a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6">
+        <div>
+          <ul class="list-unstyled">
+            <li> <a><strong>Stay Connected</strong></a> </li>
+            <li> <a href="maintenance.html">Facebook</a> </li>
+            <li> <a href="maintenance.html">Twitter</a> </li>
+            <li> <a href="maintenance.html">Google +</a> </li>
+            <li> <a></a> </li>
+          </ul>
+        </div>
+      </div>
+        </div>
+    </div>
+
+<footer class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p>Copyright © iPort. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.3.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
